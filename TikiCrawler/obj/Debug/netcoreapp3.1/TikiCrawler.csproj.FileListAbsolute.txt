@@ -1,0 +1,64 @@
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.exe
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.deps.json
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.runtimeconfig.json
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.runtimeconfig.dev.json
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.dll
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.pdb
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.csprojAssemblyReference.cache
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.AssemblyInfoInputs.cache
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.AssemblyInfo.cs
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.csproj.CoreCompileInputs.cache
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.csproj.CopyComplete
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.dll
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.pdb
+C:\Users\Tin Trinh\source\repos\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.genruntimeconfig.cache
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.exe
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.deps.json
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.runtimeconfig.json
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.runtimeconfig.dev.json
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.dll
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.pdb
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.csproj.AssemblyReference.cache
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.GeneratedMSBuildEditorConfig.editorconfig
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.AssemblyInfoInputs.cache
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.AssemblyInfo.cs
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.csproj.CoreCompileInputs.cache
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.csproj.CopyComplete
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.dll
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.pdb
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.genruntimeconfig.cache
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\selenium-manager\linux\selenium-manager
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\selenium-manager\macos\selenium-manager
+C:\TMĐT\OneDrive_2023-02-08\1. Web Crawler Demo\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\selenium-manager\windows\selenium-manager.exe
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\selenium-manager\linux\selenium-manager
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\selenium-manager\macos\selenium-manager
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\selenium-manager\windows\selenium-manager.exe
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.exe
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.deps.json
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.runtimeconfig.json
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.runtimeconfig.dev.json
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\TikiCrawler.pdb
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\WebDriver.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.csproj.AssemblyReference.cache
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.GeneratedMSBuildEditorConfig.editorconfig
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.AssemblyInfoInputs.cache
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.AssemblyInfo.cs
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.csproj.CoreCompileInputs.cache
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.csproj.CopyComplete
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.pdb
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\obj\Debug\netcoreapp3.1\TikiCrawler.genruntimeconfig.cache
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\nunit.engine.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\nunit.engine.core.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\testcentric.engine.metadata.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\nunit.framework.dll
+D:\Thiết kế hệ thống\TikiCrawler\TikiCrawler\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
