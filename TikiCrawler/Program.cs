@@ -17,7 +17,7 @@ namespace TikiCrawler
             IWebDriver browser = new ChromeDriver();
 
             //path
-            string path = @"D:\Thiết kế hệ thống\TikiCrawler\import.txt";
+            string path = @"D:\Thiết kế hệ thống\TikiCrawler\import.csv";
 
             //header
             string format = "@ID@Type@SKU@Name@Published@Is featured?@Visibility in catalog@Short description@Description@Date sale price starts@Date sale price ends@Tax status@Tax class@In stock?@Stock@Low stock amount@Backorders allowed?@Sold individually?@Weight(kg)@Length(cm)@Width(cm)@Height(cm)@Allow customer reviews?@Purchase note@Sale price@Regular price@Categories@Tags@Shipping class@Images@Download limit@Download expiry days@Parent@Grouped products@Upsells@Cross-sells@External URL@Button text@Position@Attribute 1 name@Attribute 1 value(s)@Attribute 1 visible@Attribute 1 global@Attribute 1 default\n";
@@ -27,32 +27,39 @@ namespace TikiCrawler
 
             List<Sanpham> AllSanpham = new List<Sanpham>();
             List<string> listProductLink = new List<string>();
-            int dem = 1;
 
-            do
+            //50 sp đầu ở link 1
+            browser.Navigate().GoToUrl("https://tiki.vn/search?q=len");
+            int dem = 0;
+            var products = browser.FindElements(By.CssSelector(".product-item"));
+            foreach (var product in products)
             {
-                browser.Navigate().GoToUrl("https://tiki.vn/search?q=len");
-                if(dem >50)
-                    browser.Navigate().GoToUrl("https://tiki.vn/search?q=len&page=2");
-
-                //Select all product items by CSS Selector
-                var products = browser.FindElements(By.CssSelector(".product-item"));
-
-                foreach (var product in products)
+                try
                 {
-                    try
-                    {
-                        string productLink = product.GetAttribute("href");
-                        listProductLink.Add(productLink);
-                        Console.WriteLine(dem);
-                        dem++;
-                        Console.WriteLine(productLink);
-                    }
-                    catch
-                    { continue; }
+                    string productLink = product.GetAttribute("href");
+                    listProductLink.Add(productLink);
+                    dem++;
+                    Console.WriteLine("\n"+ dem +"\n"+productLink);
                 }
+                catch
+                { continue; }
             }
-            while(dem <100);
+
+            //50 sp tiếp theo ở link 2
+            browser.Navigate().GoToUrl("https://tiki.vn/search?q=len&page=2");
+            products = browser.FindElements(By.CssSelector(".product-item"));
+            foreach (var product in products)
+            {
+                try
+                {
+                    string productLink = product.GetAttribute("href");
+                    listProductLink.Add(productLink);
+                    dem++;
+                    Console.WriteLine("\n" + dem + "\n" + productLink);
+                }
+                catch
+                { continue; }
+            }
             //Go to each product link
             for (int i = 0; i < listProductLink.Count; i++)
             {
@@ -70,31 +77,40 @@ namespace TikiCrawler
                 Console.WriteLine("DEBUG BRAND: " + product.brand);
 
                 //Extract product price
-                product.price = "";
                 try
                 {
                     product.price = browser.FindElement(By.CssSelector(".product-price__current-price")).Text.ToString();
                 }
                 catch
                 {
-                    product.price = browser.FindElements(By.CssSelector(".styles__Price-sc-6hj7z9-1"))[0].Text.ToString();
+                    try
+                    {
+                        product.price = browser.FindElements(By.CssSelector(".styles__Price-sc-6hj7z9-1"))[0].Text.ToString();
+                    }
+                    catch
+                    {
+                        product.price = browser.FindElement(By.ClassName("list-price")).Text.ToString();
+                    }
                 }
+                
                 product.price = Regex.Match(product.price, "^[\\d|\\.|\\,]+").Value;
                 Console.WriteLine("DEBUG PRICE: " + product.price);
 
                 //Extract product images
-                int countImg = browser.FindElements(By.XPath("//a[@data-view-id='pdp_main_view_photo']")).Count;
-                product.img = browser.FindElements(By.ClassName("fWjUGo"))[2].GetAttribute("src") + ", ";
+                string htmlItem = browser.PageSource;
+                MatchCollection matchesImage = Regex.Matches(htmlItem, "\"base_url\":\"(.*?)\"");
+                int count = 0;
+                int countImg = matchesImage.Count;
 
-                for (int x = 0; x < countImg; x++)
+                foreach (Match matchImage in matchesImage)
                 {
-                    string altImg = "product-img-" + x;
-                    string xp = "//img[@alt='" + altImg + "']";
-                    product.img += browser.FindElements(By.XPath(xp))[0].GetAttribute("src");
-                    if (x + 1 < countImg)
+                    var temp = matchImage.Groups[1].Value;
+                    product.img += temp.ToString();
+                    if (count +1 < countImg)
                         product.img += ", ";
+                    count++;
                 }
-                Console.WriteLine(countImg + " IMG: " + product.img);
+                Console.WriteLine("\nIMG: " + product.img);
 
                 //Extract colors
                 product.color = "";
@@ -123,31 +139,44 @@ namespace TikiCrawler
                 Console.WriteLine(countColor + " COLOR: " + product.color);
 
                 //Extract product details
-                string findDetails = browser.FindElement(By.ClassName("has-table")).GetAttribute("outerHTML");
                 try
                 {
-                    Match match = Regex.Match(findDetails, "<td>(.*?)</td>", RegexOptions.Singleline);
-                    int index = 1;
-                    while (match.Success)
+                    string findDetails = browser.FindElement(By.ClassName("has-table")).GetAttribute("outerHTML");
+                    try
                     {
-                        product.detail += match.Groups[1].Value;
+                        Match match = Regex.Match(findDetails, "<td>(.*?)</td>", RegexOptions.Singleline);
+                        int index = 1;
+                        while (match.Success)
+                        {
+                            product.detail += match.Groups[1].Value;
 
-                        if (index % 2 != 0)
-                            product.detail += ": ";
-                        else
-                            product.detail += "\n";
+                            if (index % 2 != 0)
+                                product.detail += ": ";
+                            else
+                                product.detail += "\n";
 
-                        index++;
+                            index++;
 
-                        match = match.NextMatch();
+                            match = match.NextMatch();
+                        }
                     }
+                    catch (RegexMatchTimeoutException) { }
                 }
-                catch (RegexMatchTimeoutException){}
+                catch { continue; }
+                
                 Console.WriteLine("DETAIL: " + product.detail);
 
                 //Extract product description
                 string findDescription = browser.FindElement(By.ClassName("wyACs")).GetAttribute("outerHTML");
                 product.description = Regex.Match(findDescription, "wyACs(.*?)>([\\s\\S]*)</div>").Groups[2].Value;
+
+                try
+                {
+                    product.description = Regex.Replace(product.description, "<img.*?>", "");
+                    /*product.description = Regex.Replace(product.description, "<p></p>", "");*/
+                }
+                catch { continue; }
+
                 Console.WriteLine("DESCRIPTION: "+ product.description);
 
                 AllSanpham.Add(product);
@@ -200,7 +229,7 @@ namespace TikiCrawler
 
                 File.AppendAllText(path, data);
 
-                System.Threading.Thread.Sleep(5000);
+                System.Threading.Thread.Sleep(1000);
             }
 
             Console.WriteLine("The data has been successfully saved to the CSV file");
