@@ -64,10 +64,10 @@
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
         }
       },
-      "Selenium.Support/4.8.2": {
+      "Selenium.Support/4.9.0": {
         "type": "package",
         "dependencies": {
-          "Selenium.WebDriver": "4.8.2"
+          "Selenium.WebDriver": "4.9.0"
         },
         "compile": {
           "lib/netstandard2.1/WebDriver.Support.dll": {}
@@ -76,7 +76,7 @@
           "lib/netstandard2.1/WebDriver.Support.dll": {}
         }
       },
-      "Selenium.WebDriver/4.8.2": {
+      "Selenium.WebDriver/4.9.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -323,10 +323,10 @@
         "nunit_256.png"
       ]
     },
-    "Selenium.Support/4.8.2": {
-      "sha512": "tS51BJC22gQBSW2VYFAxJ7GwPQguzel41bnQyXkgoShAUO5P48lxQ83EBZe8isISjMKCDsHWOv95aUNVQaEFGA==",
+    "Selenium.Support/4.9.0": {
+      "sha512": "YzLglT1RymLURjlUQ5FjspDwaDRvPS/iEPPcU0DPDi9vSQUhZLgFEn1z6L2RuFQY+1Uo8LSN54awLK3fsB+UTg==",
       "type": "package",
-      "path": "selenium.support/4.8.2",
+      "path": "selenium.support/4.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -339,14 +339,14 @@
         "lib/net6.0/WebDriver.Support.dll",
         "lib/netstandard2.0/WebDriver.Support.dll",
         "lib/netstandard2.1/WebDriver.Support.dll",
-        "selenium.support.4.8.2.nupkg.sha512",
+        "selenium.support.4.9.0.nupkg.sha512",
         "selenium.support.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.8.2": {
-      "sha512": "gNCaZrR32U2e9pyS+HXSqNHdcrIbqulOkcmycFoDL/tM5la4tELaZ3FpPRbq7tjJK3cKs5lLqVVFM9PfY1WW5g==",
+    "Selenium.WebDriver/4.9.0": {
+      "sha512": "7MiV7cpu5LuM7bBhMz/a25Lb78rFyfl8v2G3q56TAtxdDJEj3WXaRMDyytrKq1YVZ7jaN3pygku0n0IsYfe/SQ==",
       "type": "package",
-      "path": "selenium.webdriver/4.8.2",
+      "path": "selenium.webdriver/4.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -364,7 +364,7 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.8.2.nupkg.sha512",
+        "selenium.webdriver.4.9.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
@@ -392,8 +392,8 @@
     ".NETCoreApp,Version=v3.1": [
       "NUnit >= 3.13.3",
       "NUnit3TestAdapter >= 4.4.2",
-      "Selenium.Support >= 4.8.2",
-      "Selenium.WebDriver >= 4.8.2",
+      "Selenium.Support >= 4.9.0",
+      "Selenium.WebDriver >= 4.9.0",
       "Selenium.WebDriver.ChromeDriver >= 112.0.5615.4900"
     ]
   },
@@ -446,11 +446,11 @@
           },
           "Selenium.Support": {
             "target": "Package",
-            "version": "[4.8.2, )"
+            "version": "[4.9.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.8.2, )"
+            "version": "[4.9.0, )"
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
